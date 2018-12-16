@@ -14,7 +14,7 @@
         </div>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Select a category name : "></asp:Label>
-        <asp:DropDownList ID="ddlCatName" runat="server" AutoPostBack="True" DataSourceID="category" DataTextField="CategoryName" DataValueField="CategoryName">
+        <asp:DropDownList ID="ddlCatName" runat="server" DataSourceID="category" DataTextField="CategoryName" DataValueField="CategoryName">
         </asp:DropDownList>
         <asp:Button ID="btnFind" runat="server" Text="Find" OnClick="btnFind_Click" />
         <asp:SqlDataSource ID="category" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
