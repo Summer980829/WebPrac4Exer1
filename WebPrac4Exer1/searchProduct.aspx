@@ -18,7 +18,9 @@
         </asp:DropDownList>
         <asp:Button ID="btnFind" runat="server" Text="Find" OnClick="btnFind_Click" />
         <asp:SqlDataSource ID="category" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
-        <br />
+        <br /> Your search return :
+        <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
+&nbsp;record.<br />
         <asp:SqlDataSource ID="matchedProduct" runat="server" ConnectionString="<%$ ConnectionStrings:conn %>" SelectCommand="SELECT P.UnitPrice, P.ProductName FROM Products AS P INNER JOIN Categories AS C ON P.CategoryID = C.CategoryID WHERE (C.CategoryName = @CategoryName)">
             <SelectParameters>
                 <asp:ControlParameter ControlID="ddlCatName" Name="CategoryName" PropertyName="SelectedValue" />
