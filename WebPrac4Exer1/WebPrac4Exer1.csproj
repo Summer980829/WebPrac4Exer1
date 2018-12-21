@@ -95,6 +95,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Exercise2.aspx" />
     <Content Include="searchProduct.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -111,6 +112,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercise2.aspx.cs">
+      <DependentUpon>Exercise2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exercise2.aspx.designer.cs">
+      <DependentUpon>Exercise2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="searchProduct.aspx.cs">
       <DependentUpon>searchProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

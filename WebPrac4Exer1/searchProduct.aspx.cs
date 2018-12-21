@@ -20,5 +20,10 @@ namespace WebPrac4Exer1
             
             lblResult.Text = "" + Repeater1.Items.Count;
         }
+
+        protected void category_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }
